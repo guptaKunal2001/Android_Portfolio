@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#063070">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        tools:srcCompat="@drawable/abc" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Kunal Gupta"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:text="Coding Enthusiast and having passion for android development."
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Education"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:textColor="#ffffff"
+            android:padding="15dp"
+            android:onClick="Education"
+            app:backgroundTint="#A30909"
+            android:text="Education Details" />
+
+        <Button
+            android:id="@+id/Projects"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:textColor="#ffffff"
+            android:padding="15dp"
+            android:onClick="Projects"
+            app:backgroundTint="#05611C"
+            android:text="Project Details" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Research"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:textColor="#ffffff"
+            android:padding="15dp"
+            android:onClick="Research"
+            app:backgroundTint="#980674"
+            android:text="Research Paper" />
+
+        <Button
+            android:id="@+id/Coding"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:textColor="#ffffff"
+            android:padding="15dp"
+            android:onClick="Coding"
+            app:backgroundTint="#A87205"
+            android:text="Coding Profiles" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/linkedin" />
+        <TextView
+            android:id="@+id/linkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LinkedIn Account"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:onClick="Linkedin"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/img" />
+        <TextView
+            android:id="@+id/github"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Github Account"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:onClick="Github"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+
+</LinearLayout>
